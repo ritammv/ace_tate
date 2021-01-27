@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   BlackBar,
   BlackBarText,
@@ -17,12 +18,16 @@ export default function NavBar() {
         </BlackBarText>
       </BlackBar>
       <NavBarContainer>
-        <NavBarLogo
-          src="https://mma.prnewswire.com/media/1200151/Aceandtate_Logo.jpg?p=publish"
-          alt=""
-        />
+        <Link href="/">
+          <NavBarLogo
+            src="https://mma.prnewswire.com/media/1200151/Aceandtate_Logo.jpg?p=publish"
+            alt=""
+          />
+        </Link>
         <TextContainer>
-          <h3>Glasses</h3>
+          <Link href="/glasses">
+            <h3>Glasses</h3>
+          </Link>
           <h3>Sunglasses</h3>
           <h3>Accessories</h3>
           <h3>Help</h3>

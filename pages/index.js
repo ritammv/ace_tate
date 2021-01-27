@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import NavBar from '../components/NavBar';
 import {
   ButtonContainer,
@@ -15,7 +16,9 @@ export default function Home() {
           Eyewear starting from €100, including prescription lenses
         </HomeText>
         <ButtonContainer>
-          <HomeButton className="home_button">SHOP GLASSES</HomeButton>
+          <Link href="/glasses">
+            <HomeButton className="home_button">SHOP GLASSES</HomeButton>
+          </Link>
           <HomeButton className="home_button">SHOP SUNGLASSES</HomeButton>
         </ButtonContainer>
       </HomeContainer>
