@@ -22,10 +22,10 @@ export default function NavBar() {
           alt=""
         />
         <TextContainer>
-          <h3>GLASSES</h3>
-          <h3>SUNGLASSES</h3>
-          <h3>ACCESSORIES</h3>
-          <h3>HELP</h3>
+          <h3>Glasses</h3>
+          <h3>Sunglasses</h3>
+          <h3>Accessories</h3>
+          <h3>Help</h3>
         </TextContainer>
 
         <IconContainer>

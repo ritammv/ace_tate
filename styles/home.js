@@ -18,16 +18,22 @@ export const HomeText = styled.h1`
 `;
 
 export const HomeButton = styled.button`
-  height: 70px;
-  padding: 1rem 3rem;
+  height: 75px;
+  padding: 1.5rem 4rem;
   border-radius: 50px;
   background-color: black;
   border: none;
   font-size: 20px;
-
+  font-weight: 400;
   color: white;
+  &:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+  }
 `;
 
 export const ButtonContainer = styled.div`
   width: 50%;
+  text-align: center;
+  margin-top: 3rem;
 `;

@@ -15,8 +15,8 @@ export default function Home() {
           Eyewear starting from €100, including prescription lenses
         </HomeText>
         <ButtonContainer>
-          <HomeButton>SHOP GLASSES</HomeButton>
-          <HomeButton>SHOP SUNGLASSES</HomeButton>
+          <HomeButton className="home_button">SHOP GLASSES</HomeButton>
+          <HomeButton className="home_button">SHOP SUNGLASSES</HomeButton>
         </ButtonContainer>
       </HomeContainer>
     </div>
