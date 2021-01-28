@@ -33,11 +33,12 @@ export const BlackBarText = styled.p`
 `;
 
 export const IconContainer = styled.div`
-  width: 5%;
+  width: 7%;
   display: flex;
   flex-direction: row;
   float: right;
   justify-content: space-between;
+  margin-right: 1rem;
 `;
 
 export const IconImage = styled.img`

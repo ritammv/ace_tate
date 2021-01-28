@@ -20,26 +20,31 @@ export default function ProductDetails({ item }) {
           <ProductImageLeft
             className="image_spacing"
             src={getImageUrl(item.current_variant.images.female.url)}
+            alt="female-image-frame"
           />
 
           <ProductImageLeft
             className="image_spacing"
             src={getImageUrl(item.current_variant.images.male.url)}
+            alt="male-image-frame"
           />
         </ProductImageSubContainer>
         <ProductImageSubContainer>
           <ProductImageRight
             className="image_spacing"
             src={getImageUrl(item.current_variant.images.front.url)}
+            alt="front-frame-view"
           />
           <ProductImageRight
             className="image_spacing"
             src={getImageUrl(item.current_variant.images.side.url)}
+            alt="side-frame-view"
           />
 
           <ProductImageRight
             className="image_spacing"
             src={getImageUrl(item.current_variant.images.profile.url)}
+            alt="profile-image-view"
           />
         </ProductImageSubContainer>
       </ProductImageMainContainer>

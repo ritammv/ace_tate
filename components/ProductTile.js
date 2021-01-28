@@ -7,8 +7,10 @@ import {
   ProductImage,
   ProductTextContainer,
   ProductName,
+  HeartIcon,
   ProductColor,
 } from '../styles/producttile';
+
 import { getImageUrl } from '../helpers/helpers';
 
 export default function ProductTile({ item }) {
@@ -30,8 +32,10 @@ export default function ProductTile({ item }) {
                   ))
                 }
                 src={getImageUrl(item.current_variant.images.front.url)}
+                alt="product-thumbnail-image"
               />
             </Link>
+            <HeartIcon src="/heart.svg" alt="heart-icon" />
           </ProductImageContainer>
           <ProductTextContainer>
             <ProductName>{item.current_variant.name}</ProductName>

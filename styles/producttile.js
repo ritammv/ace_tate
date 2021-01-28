@@ -40,3 +40,11 @@ export const ProductColor = styled.h1`
   font-size: 25px;
   margin-top: 0.2rem;
 `;
+
+export const HeartIcon = styled.img`
+  height: 30px;
+  width: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+`;

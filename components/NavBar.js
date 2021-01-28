@@ -22,7 +22,7 @@ export default function NavBar() {
         <Link href="/">
           <NavBarLogo
             src="https://mma.prnewswire.com/media/1200151/Aceandtate_Logo.jpg?p=publish"
-            alt=""
+            alt="ace-tate-logo"
           />
         </Link>
         <TextContainer>
@@ -37,9 +37,9 @@ export default function NavBar() {
         </TextContainer>
 
         <IconContainer>
-          <IconImage src="/search.svg" />
-          <IconImage src="/heart.svg" />
-          <IconImage src="/circle.svg" />
+          <IconImage src="/search.svg" alt="search-icon" />
+          <IconImage src="/heart.svg" alt="heart-icon" />
+          <IconImage src="/circle.svg" alt="circle-icon" />
         </IconContainer>
       </NavBarContainer>
     </>
