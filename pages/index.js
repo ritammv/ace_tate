@@ -19,7 +19,9 @@ export default function Home() {
           <Link href="/glasses">
             <HomeButton className="home_button">SHOP GLASSES</HomeButton>
           </Link>
-          <HomeButton className="home_button">SHOP SUNGLASSES</HomeButton>
+          <Link href="/sunglasses">
+            <HomeButton className="home_button">SHOP SUNGLASSES</HomeButton>
+          </Link>
         </ButtonContainer>
       </HomeContainer>
     </div>

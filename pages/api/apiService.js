@@ -1,6 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 export const fetchProducts = async () => {
   try {
     const res = await fetch(
@@ -8,6 +5,17 @@ export const fetchProducts = async () => {
     );
     return res.json();
   } catch (err) {
-    console.error(err.message);
+    return console.error(err.message);
+  }
+};
+
+export const fetchBySku = async (sku) => {
+  try {
+    const res = await fetch(
+      `https://www.aceandtate.com/torii/catalog/products?skus=${sku}`
+    );
+    return res.json();
+  } catch (err) {
+    return console.error(err.message);
   }
 };

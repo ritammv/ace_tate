@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavBarContainer = styled.div`
   width: 100%;
-  height: 6rem;
+  height: 8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,11 +12,14 @@ export const NavBarContainer = styled.div`
 export const NavBarLogo = styled.img`
   height: 4rem;
   width: 220px;
+  cursor: pointer;
 `;
 
 export const BlackBar = styled.div`
   width: 100%;
   height: 2.5rem;
+  display: flex;
+  align-items: center;
   background-color: black;
   color: white;
 `;
@@ -48,4 +51,15 @@ export const TextContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const TextTabs = styled.h1`
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 200;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid black;
+  }
 `;

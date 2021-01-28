@@ -13,3 +13,7 @@ body {
 .home_button + .home_button {
   margin-left: 0.5rem;
 }
+
+.image_spacing + .image_spacing {
+  margin-top: 1.5rem;
+}

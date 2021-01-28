@@ -4,6 +4,7 @@ export const ProductTileContainer = styled.div`
   height: 700px;
   width: 470px;
   position: relative;
+  display: flex;
 `;
 
 export const ProductImageContainer = styled.div`
@@ -23,5 +24,5 @@ export const ProductTextContainer = styled.div`
   width: 100%;
   text-align: center;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
 `;

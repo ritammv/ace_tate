@@ -12,7 +12,7 @@ export default function ProductTile({ item }) {
       {item.current_variant.images.front && (
         <ProductTileContainer>
           <ProductImageContainer>
-            <Link href={`/glasses/${item.current_variant.id}`}>
+            <Link href={`/glasses/${item.current_variant.sku}`}>
               <ProductImage src={item.current_variant.images.front.url} />
             </Link>
           </ProductImageContainer>

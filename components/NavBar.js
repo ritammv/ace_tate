@@ -6,6 +6,7 @@ import {
   IconImage,
   NavBarContainer,
   NavBarLogo,
+  TextTabs,
   TextContainer,
 } from '../styles/navbar';
 
@@ -26,11 +27,13 @@ export default function NavBar() {
         </Link>
         <TextContainer>
           <Link href="/glasses">
-            <h3>Glasses</h3>
+            <TextTabs>Glasses</TextTabs>
           </Link>
-          <h3>Sunglasses</h3>
-          <h3>Accessories</h3>
-          <h3>Help</h3>
+          <Link href="/sunglasses">
+            <TextTabs>Sunglasses</TextTabs>
+          </Link>
+          <TextTabs>Accessories</TextTabs>
+          <TextTabs>Help</TextTabs>
         </TextContainer>
 
         <IconContainer>
