@@ -1,5 +1,4 @@
 import {
-  ProductDetailsContainer,
   ProductImageLeft,
   ProductImageRight,
   ProductImageMainContainer,
@@ -11,49 +10,48 @@ import {
   ProductDescriptionText,
   BasketButton,
 } from '../styles/productdetails';
+import { getImageUrl } from '../helpers/helpers';
 
-export default function ProductDetails({ data }) {
+export default function ProductDetails({ item }) {
   return (
-    <ProductDetailsContainer>
+    <>
       <ProductImageMainContainer>
         <ProductImageSubContainer>
           <ProductImageLeft
             className="image_spacing"
-            src={data.data[0].current_variant.images.female.url}
+            src={getImageUrl(item.current_variant.images.female.url)}
           />
 
           <ProductImageLeft
             className="image_spacing"
-            src={data.data[0].current_variant.images.male.url}
+            src={getImageUrl(item.current_variant.images.male.url)}
           />
         </ProductImageSubContainer>
         <ProductImageSubContainer>
           <ProductImageRight
             className="image_spacing"
-            src={data.data[0].current_variant.images.front.url}
+            src={getImageUrl(item.current_variant.images.front.url)}
           />
           <ProductImageRight
             className="image_spacing"
-            src={data.data[0].current_variant.images.side.url}
+            src={getImageUrl(item.current_variant.images.side.url)}
           />
 
           <ProductImageRight
             className="image_spacing"
-            src={data.data[0].current_variant.images.profile.url}
+            src={getImageUrl(item.current_variant.images.profile.url)}
           />
         </ProductImageSubContainer>
       </ProductImageMainContainer>
       <ProductTextContainer>
-        <ProductName>{data.data[0].name}</ProductName>
-        <ProductPrice>
-          {`From ${data.data[0].from_price.display_value}`}
-        </ProductPrice>
+        <ProductName>{item.name}</ProductName>
+        <ProductPrice>{`From ${item.from_price.display_value}`}</ProductPrice>
         <ProductLenses>Including prescription lenses</ProductLenses>
         <ProductDescriptionText>
-          {`"${data.data[0].current_variant.display_attributes.description}"`}
+          {`"${item.current_variant.display_attributes.description}"`}
         </ProductDescriptionText>
         <BasketButton>ADD TO BASKET</BasketButton>
       </ProductTextContainer>
-    </ProductDetailsContainer>
+    </>
   );
 }

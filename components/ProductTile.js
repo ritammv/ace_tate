@@ -9,6 +9,7 @@ import {
   ProductName,
   ProductColor,
 } from '../styles/producttile';
+import { getImageUrl } from '../helpers/helpers';
 
 export default function ProductTile({ item }) {
   return (
@@ -18,13 +19,17 @@ export default function ProductTile({ item }) {
           <ProductImageContainer>
             <Link href={`/glasses/${item.current_variant.sku}`}>
               <ProductImage
-                // onMouseOver={(e) =>
-                //   (e.currentTarget.src = item.current_variant.images.female.url)
-                // }
-                // onMouseOut={(e) =>
-                //   (e.currentTarget.src = item.current_variant.images.front.url)
-                // }
-                src={item.current_variant.images.front.url}
+                onMouseOver={(e) =>
+                  (e.currentTarget.src = getImageUrl(
+                    item.current_variant.images.female.url
+                  ))
+                }
+                onMouseOut={(e) =>
+                  (e.currentTarget.src = getImageUrl(
+                    item.current_variant.images.front.url
+                  ))
+                }
+                src={getImageUrl(item.current_variant.images.front.url)}
               />
             </Link>
           </ProductImageContainer>

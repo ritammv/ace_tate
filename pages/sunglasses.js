@@ -1,4 +1,5 @@
 import { useQuery, useQueryClient } from 'react-query';
+import Spinner from '../components/Spinner';
 
 import NavBar from '../components/NavBar';
 import ProductTile from '../components/ProductTile';
@@ -6,10 +7,7 @@ import { fetchProducts } from './api/apiService';
 import { ProductContainer, SpinnerContainer } from '../styles/glasses';
 
 export default function Glasses() {
-  const queryClient = useQueryClient();
   const { data, status } = useQuery('products', fetchProducts);
-
-  // console.log(queryClient);
 
   return (
     <>
@@ -23,7 +21,7 @@ export default function Glasses() {
 
       {status === 'loading' && (
         <SpinnerContainer>
-          <h1>Loading...</h1>
+          <Spinner />
         </SpinnerContainer>
       )}
       {status === 'success' && (

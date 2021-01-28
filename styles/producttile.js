@@ -20,6 +20,7 @@ export const ProductImage = styled.img`
   width: 100%;
   cursor: pointer;
   height: 100%;
+  transition: ease 0.5s;
 `;
 
 export const ProductTextContainer = styled.div`

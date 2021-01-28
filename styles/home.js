@@ -37,3 +37,15 @@ export const ButtonContainer = styled.div`
   text-align: center;
   margin-top: 3rem;
 `;
+
+export const BannerImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+export const BannerImageContainer = styled.div`
+  width: 85%;
+  margin: 0 auto;
+  height: auto;
+`;

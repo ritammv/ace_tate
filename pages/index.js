@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import NavBar from '../components/NavBar';
 import {
+  BannerImage,
+  BannerImageContainer,
   ButtonContainer,
   HomeButton,
   HomeContainer,
@@ -24,6 +26,9 @@ export default function Home() {
           </Link>
         </ButtonContainer>
       </HomeContainer>
+      <BannerImageContainer>
+        <BannerImage src="https://ctfassets.aceandtate.com/cdn-cgi/image/quality=80,width=2200/utaji99zkvj6/3RYDRmyvVA3Q4RBXK2SOGl/a370fa3c73eef0ea2192eae45ffdc1a3/Desktop_Banner.jpg" />
+      </BannerImageContainer>
     </div>
   );
 }
