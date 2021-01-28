@@ -1,9 +1,13 @@
+/* eslint-disable react/jsx-curly-newline */
+/* eslint-disable no-return-assign */
 import Link from 'next/link';
 import {
   ProductTileContainer,
   ProductImageContainer,
   ProductImage,
   ProductTextContainer,
+  ProductName,
+  ProductColor,
 } from '../styles/producttile';
 
 export default function ProductTile({ item }) {
@@ -13,11 +17,22 @@ export default function ProductTile({ item }) {
         <ProductTileContainer>
           <ProductImageContainer>
             <Link href={`/glasses/${item.current_variant.sku}`}>
-              <ProductImage src={item.current_variant.images.front.url} />
+              <ProductImage
+                // onMouseOver={(e) =>
+                //   (e.currentTarget.src = item.current_variant.images.female.url)
+                // }
+                // onMouseOut={(e) =>
+                //   (e.currentTarget.src = item.current_variant.images.front.url)
+                // }
+                src={item.current_variant.images.front.url}
+              />
             </Link>
           </ProductImageContainer>
           <ProductTextContainer>
-            <h1>{item.current_variant.name}</h1>
+            <ProductName>{item.current_variant.name}</ProductName>
+            <ProductColor>
+              {item.current_variant.display_attributes.color}
+            </ProductColor>
           </ProductTextContainer>
         </ProductTileContainer>
       )}
