@@ -4,10 +4,10 @@ A simple Next.js Application bootstrapped with Create-next-app which utilises th
 
 # Technologies Used
 
-- Next.js
-- React
-- React-query for data fetching and caching
-- Styled-components
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [React-query](https://react-query.tanstack.com/) for data fetching and caching
+- [Styled-components](https://styled-components.com)
 
 # Improvements
 
@@ -29,5 +29,5 @@ A simple Next.js Application bootstrapped with Create-next-app which utilises th
 
 # Author
 
-Ritam Verma
-Powered by Ace&Tate
+- Ritam Verma - [GitHub](https://github.com/ritammv) - [LinkedIn](https://www.linkedin.com/in/ritammv)
+- Powered by [Ace&Tate](https://www.aceandtate.com) 
