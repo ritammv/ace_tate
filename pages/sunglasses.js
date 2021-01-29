@@ -1,6 +1,5 @@
-import { useQuery, useQueryClient } from 'react-query';
+import { useQuery } from 'react-query';
 import Spinner from '../components/Spinner';
-
 import NavBar from '../components/NavBar';
 import ProductTile from '../components/ProductTile';
 import { fetchProducts } from './api/apiService';
